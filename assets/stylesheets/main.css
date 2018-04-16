@@ -1,0 +1,1069 @@
+/*------------------------css common settings ---------------------------------*/
+
+/*this is to teach older browser how to handle new html5 semantics correctly otherwise it will treat all unknown semantics as inline */
+
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+    display: block;
+}
+
+body,
+ul,
+li,
+a,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: SamsungSharpSansBd;
+    src: url("../fonts/SamsungSharpSansBd.woff");
+}
+
+@font-face {
+    font-family: SamsungOne-400;
+    src: url("../fonts/SamsungOne-400.woff2");
+}
+
+@font-face {
+    font-family: SamsungOne-700;
+    src: url("../fonts/SamsungOne-700.woff2");
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+a,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'SamsungOne-400';
+}
+
+a {
+    text-decoration: none;
+    font-family: 'SamsungOne-400';
+    color: black;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    font-family: SamsungOne-400;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: 2px solid white;
+    padding: 10px 23px;
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+button:hover {
+    border-color: rgb(95, 95, 95);
+    background-color: rgb(95, 95, 95);
+    transition-duration: 0.5s;
+}
+
+.btn {
+    color: black;
+    border: 2px solid black;
+}
+
+.btn:hover {
+    border: 2px solid rgb(95, 95, 95);
+    color: white;
+}
+
+h1 {
+    font-family: SamsungSharpSansBd;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-size: 66px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.extIcon {
+    color: white;
+    background-color: black;
+    padding: 1px;
+    padding-bottom: 0px;
+    font-size: 11px;
+}
+
+.extLink,
+.extLink:hover {
+    border-bottom: none;
+}
+
+.extLink:hover i {
+    background-color: #1428a0;
+}
+
+.arrow:hover::after {
+    content: " >";
+    font-weight: bold;
+    font-size: 1.0em;
+    text-decoration: none;
+}
+
+/*---------------------------------- website css ------------------------------*/
+
+.UP_arrow {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    padding: 5px 15px;
+    background-color: rgba(0, 0, 0, 0.5);   
+    z-index: 999;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.UP_arrow i {
+    color: white;
+    opacity: 0.8;
+}
+
+.feedBack_Container {
+    padding-top: 5px;
+    width: 140px;
+    height: 50px;
+    background-color: #0071BF;
+    opacity: 1;
+    position: fixed;
+    top: 45%;
+    right: -65px;
+    transform: rotateZ(-90deg);
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 15px 15px 0px 0px;
+    cursor: pointer;
+    transition-duration: 0.8s;
+}
+
+.feedBack_Container:hover {
+    right: -50px;
+}
+
+.feedBack_Container span {
+    color: white;
+}
+
+.feedBack_Container .gif_container {
+    width: 20px;
+}
+
+.feedBack_Container 
+
+
+
+header {
+    border-bottom: 1px solid #dadada;
+    position: relative;
+}
+
+.menu .searchBox {
+    align-self: center;
+    flex: 0;
+    margin-right: 10%;
+    cursor: pointer;
+}
+
+.searchBox:hover i {
+    color: #1428a0;
+}
+
+.hamIcon,
+#hamState,
+.close {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu>nav {
+    align-content: center;
+    flex: 1;
+}
+
+.menu nav>ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu>nav>ul li a {
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #363636;
+    white-space: nowrap;
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 15px;
+    border-bottom: 2px solid transparent;
+}
+
+.menu>nav>ul li a:hover {
+    color: #1428a0;
+    border-bottom-color: #1428a0;
+}
+
+.menu>nav ul li:last-child a {
+    border: none;
+}
+
+.menu>nav ul li:last-child:hover a {
+    color: #1428a0;
+    border: none;
+}
+
+.Lmenu {
+    margin-left: 10%;
+}
+
+.Rmenu ul {
+    justify-content: flex-end;
+}
+
+.searchBox {
+    margin-right: 8%;
+}
+
+.menu+.searchBox {
+    display: none;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.logoContainer .logo {
+    width: 130px;
+    height: 20px;
+    background-image: url(../images/logo/sam_logo.png);
+    background-size: cover;
+    align-self: center;
+}
+
+.dropDown {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #dadada;
+    top: 61px;
+    left: 0px;
+    padding: 20px;
+    background-color: white;
+    z-index: 999;
+}
+
+.dropDown>nav,
+.dropDown>div {
+    flex: 0.17;
+}
+
+.dropDown nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.dropDown nav ul li a {
+    display: inline-block;
+    font-weight: lighter;
+    padding: 0px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-size: 12px;
+    border: none;
+}
+
+.dropDown nav ul li a:hover {
+    text-decoration-line: underline;
+}
+
+.dropDown nav ul li:first-child a::after {
+    content: ">";
+    font-size: 1.3em;
+    font-weight: bold;
+    position: absolute;
+    right: -15px;
+    top: -3px;
+}
+
+.dropDown nav ul li:first-child a {
+    position: relative;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-decoration-line: none;
+    text-transform: uppercase;
+}
+
+.dropDown .col3 {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #dadada;
+    padding-left: 20px;
+}
+
+.dropDown .col4 {
+    display: flex;
+    flex: 0.3;
+    align-self: center;
+}
+
+.menu nav ul li:hover .dropDown {
+    display: flex;
+}
+
+.Rmenu .dropDown {
+    justify-content: flex-start;
+}
+
+.Rmenu .dropDown>nav:first-child {
+    margin-left: 10%;
+}
+
+.Rmenu .dropDown .col3 {
+    border: none;
+}
+
+.Rmenu .dropDown nav ul li:first-child a::after {
+    display: none;
+}
+
+#content {
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#content article {
+    position: relative;
+}
+
+.art1 {
+    margin-top: 0.5px;
+    background-color: #000000;
+}
+
+.art1 .poster {
+    display: grid;
+    width: 56%;
+}
+
+.art1 section {
+    position: absolute;
+    right: 10%;
+    top: 32%;
+}
+
+.art1 section h1:first-child {
+    text-transform: capitalize;
+}
+
+.art1 section h1:nth-child(2) {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.art1 section span {
+    display: block;
+    color: white;
+    font-size: 20px;
+}
+
+.art1 section button {
+    margin-top: 10px;
+}
+
+.art2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.art2 .poster {
+    width: 57%;
+    display: grid;
+}
+
+.art2 section {
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+
+.art2 section h1,
+.art2 section span,
+.art2 section button {
+    color: black;
+}
+
+.art2 section span {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.art3 {
+    display: grid;
+}
+
+.art3 section {
+    position: absolute;
+    top: 45%;
+    right: 7%;
+}
+
+.art3 section h1 {
+    font-size: 46px;
+}
+
+.art3 section h1:nth-child(3) {
+    font-size: 74px;
+}
+
+.art3 section span {
+    font-family: "SamsungSharpSansBd";
+    display: block;
+    color: white;
+    font-size: 27px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.art3 section button {
+    color: white;
+    border-color: white;
+}
+
+.art4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: linear-gradient(to right, #e4e4e4, white);
+}
+
+.art4 .poster {
+    display: grid;
+    width: 55%;
+}
+
+.art4 section {
+    position: absolute;
+    top: 40%;
+    left: 3%;
+}
+
+.art4 section h1 {
+    color: #000000;
+    font-size: 60px;
+}
+
+.art4 section span {
+    display: block;
+}
+
+.art4 section button {
+    margin-top: 20px;
+}
+
+.art4 section button:hover {
+    color: #000000;
+    border-color: #000000;
+}
+
+.art5 {
+    display: flex;
+}
+
+.art5 .poster {
+    display: grid;
+    width: 55%;
+}
+
+.art5 section {
+    position: absolute;
+    right: 5%;
+    top: 35%;
+}
+
+.art5 section h1 {
+    color: #000000;
+    font-size: 60px;
+}
+
+.art5 section span {
+    display: block;
+}
+
+.art5 section span:nth-child(4) {
+    margin-bottom: 20px;
+}
+
+.art5 section button:last-child {
+    margin-left: 1.5%;
+}
+
+#content>article section button:last-child {
+    margin-left: 10px;
+}
+
+#footer article.ft_1 {
+    background-color: #f7f7f7;
+    border-top: 1px solid #d0d0d0;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+#footer article.ft_1 span {
+    font-family: "SamsungOne-400";
+    display: block;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin-left: 10%;
+    font-weight: normal;
+}
+
+#footer>.ft_2 {
+    border-top: 1px solid #d0d0d0;
+    padding: 15px 0px;
+}
+
+.ft_2.sec1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.ft_2.sec1 a {
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.ft_2.sec1 a:hover {
+    text-decoration: underline;
+    color: #1428a0;
+}
+
+.ft_2.sec1 i {
+    margin-right: 10%;
+}
+
+.ft_2.sec1 a:hover+i {
+    color: #1428a0;
+}
+
+.ft_2.sec3 {
+    margin-top: 20px;
+}
+
+.ft_2.sec3 span {
+    margin-left: 10%;
+    font-size: 12px;
+}
+
+.ft_2.sec2 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 15%;
+}
+
+.ft_2.sec2>nav ul {
+    list-style: none;
+}
+
+.ft_2.sec2>nav ul li {
+    margin-top: 8px;
+    text-align: left;
+}
+
+.ft_2.sec2>nav ul li a {
+    font-size: 12px;
+}
+
+.ft_2.sec2>nav ul li a:hover {
+    color: #1428a0;
+}
+
+.ft_2.sec2>nav ul li:first-child {
+    margin-bottom: 20px;
+}
+
+.ft_2.sec2>nav ul li:first-child span {
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.ft_2.sec2>nav.f2s2_col4>ul>li:nth-child(2) ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.ft_2.sec2>nav.f2s2_col4>ul>li:nth-child(2) ul li {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.ft_2.sec2>nav.f2s2_col4>ul>li:nth-child(2) ul li:hover i {
+    color: #1428a0;
+}
+
+.ft_3 {
+    padding: 20px 10%;
+    background-color: #363636;
+    width: 100%;
+}
+
+.ft_3>.f3s1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ft_3>.f3s1>ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.ft_3>.f3s1>ul li {
+    margin-right: 10px;
+}
+
+.ft_3>.f3s1>ul li a,.f3s1 > nav:nth-child(2) a {
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    padding-bottom: 0.5px;
+}
+
+.ft_3>.f3s1>ul li a:hover, .f3s1 > nav:nth-child(2) a:hover {
+    border-bottom: 1px solid white;
+}
+
+.ft_3>.f3s1>ul li:last-child i,.f3s1 > nav:nth-child(2) i {
+    color: white;
+}
+
+.f3s1 > nav:nth-child(2) {
+    display: flex;
+}
+
+.f3s1 > nav:nth-child(2) .flag_container {
+    width: 30px;
+    display: inline-block;
+    align-self: center;
+    margin-right: 3.5px;
+}
+
+.f3s2 span,.f3s3 span {
+    display: block;
+    font-size: 12px;
+    padding: 5px 0px;
+    color: #a6a6a6;
+}
+
+.f3s2 span:first-child {
+    margin-top: 10px;
+}
+
+.f3s3 span {
+    margin-top: 20px;
+}
+
+/*-------------------- screen size : 1200px ------------------------*/
+
+@media(max-width: 1200px) {
+    .menu>nav>ul li a {
+        font-size: 11px;
+    }
+    #content article section h1 {
+        font-size: 45px;
+    }
+    article.art5 section {
+        right: 1%;
+    }
+    article.art3 section {
+        right: 3%;
+    }
+    .dropDown {
+        top: 57.5px;
+    }
+}
+
+/*-------------------- screen size : 992px ------------------------*/
+
+@media(max-width: 992px) {
+    #content article section h1 {
+        font-size: 38px;
+    }
+    article.art1 section {
+        top: 15%;
+        right: 3%;
+    }
+    article.art2 section {
+        left: 2%;
+    }
+    article.art3 section {
+        top: 20%;
+        right: 1%;
+    }
+    article.art5 section {
+        right: 0%;
+    }
+    article.art5 section span {
+        display: none;
+    }
+    #content article section span {
+        font-size: 14px;
+    }
+    button {
+        padding: 10px 17px;
+        border-radius: 5px;
+        letter-spacing: 1px;
+    }
+    .menu {
+        display: flex;
+        width: 80%;
+        position: absolute;
+        justify-content: space-between;
+        flex-direction: column;
+        top: 58px;
+        border-right: 1px solid #dadada;
+        background-color: white;
+        z-index: 999;
+        right: 100%;
+        transition-duration: 1s;
+    }
+    .menu>nav {
+        display: flex;
+        margin-left: 0px;
+        /* background-color: rgba(0, 0, 0, 0.8); */
+    }
+    .menu>.searchBox {
+        display: none;
+    }
+    .menu .Rmenu {
+        border-top: 1px solid #dadada;
+        border-bottom: 1px solid #dadada;
+    }
+    .menu>nav>ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu>nav>ul>li {
+        position: relative;
+    }
+    .menu>nav>ul li a {
+        font-size: 14px;
+        padding-left: 10%;
+        border: none;
+    }
+    .menu nav ul li:hover a {
+        border: none;
+    }
+    header {
+        height: 58px;
+    }
+    .hamIcon,
+    #hamState {
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 5%;
+    }
+    #hamState {
+        width: 30px;
+        height: 30px;
+        margin: 0px;
+        cursor: pointer;
+        opacity: 0;
+        top: 18px;
+        z-index: 99;
+    }
+    .close {
+        position: absolute;
+        top: 15px;
+        left: 5.3%;
+        color: #1428a0;
+    }
+    #hamState:checked+.hamIcon {
+        display: none;
+    }
+    #hamState:checked~.close {
+        display: block;
+    }
+    #hamState:checked~.menu {
+        transform: translateX(100%);
+    }
+    .menu>nav>ul li::after {
+        content: ">";
+        font-size: 1em;
+        color: black;
+        position: absolute;
+        font-weight: bolder;
+        right: 5px;
+        top: 20px;
+        font-family: "SamsungOne-400";
+    }
+    .menu>nav>ul li:hover::after {
+        color: #1428a0;
+    }
+    .menu+.searchBox {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 4%;
+    }
+    .dropDown {
+        position: static;
+        padding: 0px;
+    }
+    .dropDown nav {
+        margin-bottom: 10px;
+    }
+    .dropDown nav ul li a {
+        font-size: 11px;
+        word-spacing: 0.5px;
+    }
+    .dropDown .col3,
+    .dropDown .col4 {
+        display: none;
+    }
+    .dropDown>nav ul li:first-child a {
+        /* padding: 0px; */
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .Rmenu ul li .dropDown .col1 ul li a {
+        padding-left: 0px;
+    }
+    .menu>nav ul li:hover .dropDown {
+        display: block;
+        border-top: 1px solid #dadada;
+    }
+    .Rmenu ul li .dropDown nav ul li:first-child a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .menu>nav>ul .noArrow::after {
+        content: "";
+    }
+}
+
+/*-------------------- screen size : 768px ------------------------*/
+
+@media(max-width: 768px) {
+    .art3>.poster {
+        display: grid;
+    }
+    #content>article section span {
+        display: none;
+    }
+    #content>article>.poster {
+        width: 100%;
+    }
+    #content article section h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+    #content .art2 section,
+    article.art1 section,
+    .art4 section,
+    .art5 section,
+    article.art3 section {
+        top: initial;
+        width: 100%;
+        left: 0px;
+        text-align: center;
+        bottom: 30px;
+    }
+    .art5 section {
+        bottom: 5px;
+    }
+    .art5 section h1 {
+        display: none;
+    }
+    .art5 section button {
+        background-color: wheat;
+        transition-duration: 0.8s;
+    }
+    .art5 section button:hover {
+        background-color: transparent;
+    }
+
+    .ft_2.sec1 {
+        justify-content: center;
+    }
+
+    .ft_2.sec2>nav {
+        border-top: 1px solid #dadada;
+    }
+
+    .ft_2.sec2 {
+        flex-direction: column;
+    }
+
+    .ft_2.sec2 .f2s2_col1 ul li:last-child {
+        margin-bottom: 0px;
+    }
+
+    .ft_2.sec2 .f2s2_col2 ul li:first-child {
+        display: none;
+    }
+
+    .ft_2.sec2 .f2s2_col2 {
+        border: none;
+    }
+
+    .ft_2.sec2>nav ul li:last-child {
+        margin-bottom: 15px;
+    }
+
+    #footer article.ft_1 span {
+        margin-left: 25px;
+    }
+
+    .ft_2.sec2 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .ft_2.sec2>nav {
+        padding-left: 25px;
+    }
+
+    .ft_2.sec3 {
+        margin-top: 0px;
+    }
+
+    .ft_2.sec3 span {
+        margin-left: 0px;
+        padding-left: 25px;
+    }
+
+    .ft_3 {
+        padding: 15px 25px;
+    }
+}
+
+/*-------------------- screen size : 640px ------------------------*/
+
+@media(max-width: 640px) {
+    button {
+        padding: 5px 17px;
+    }
+    #content .art2 section,
+    article.art1 section,
+    .art4 section,
+    .art5 section,
+    article.art3 section {
+        bottom: 15px;
+    }
+    #content article section h1 {
+        font-size: 2rem;
+    }
+    #content article.art1 section h1:nth-child(2) {
+        margin-bottom: 0px;
+    }
+    #content>article.art4 section button {
+        margin: 0px;
+    }
+}
+
+/*-------------------- screen size : 480px ------------------------*/
+
+@media(max-width: 480px) {
+    #content {
+        padding: 0px 10px;
+    }
+    #content .art3 section h1 {
+        display: none;
+    }
+    button {
+        padding: 5px 5px;
+        font-size: 14px;
+    }
+    #content article section h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/*-------------------- screen size : 360px ------------------------*/
+
+@media(max-width: 360px) {
+    #content article section h1 {
+        font-size: 1rem;
+    }
+    button {
+        font-size: 10px;
+    }
+}
